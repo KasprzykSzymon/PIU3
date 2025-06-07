@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/styles_price_list.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Cennik</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="price_list-container">
+    <table id="Cennik">
+        
+        <tr>
+            <th></th>
+            <th> <h1>Cennik</h1></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Pakiet</th>
+            <th>Zawartość</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            <td>Podstawowy</td>
+            <td>Marker, maska, 200 kulek</td>
+            <td>50 zł/os.</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>Marker, maska, 400 kulek</td>
+            <td>80 zł/os.</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Marker, maska, 600 kulek, kamizelka ochronna</td>
+            <td>110 zł/os.</td>
+        </tr>
+        <tr>
+            <td>Dodatkowe kulki</td>
+            <td>100 kulek</td>
+            <td>20 zł</td>
+        </tr>
+        <td>Opłata rezerwacyjna</td>
+            <td></td>
+            <td>70 zł</td>
+        </tr>
+    </table>
+
+
+</div>
+    
+    
+
+{% endblock %}

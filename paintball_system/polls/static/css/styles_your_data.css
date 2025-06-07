@@ -1,0 +1,67 @@
+h1{
+    color:rgb(0, 0, 0);
+}
+.data-container {
+    text-align: left;
+    margin: 60px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 40px 20px;
+    background: linear-gradient(
+        to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)),
+        url('/static/images/register_background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.data-content {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.btn, .btn2 {
+    display: block;
+    width: 20%; 
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn2 {
+    background-color: #00ff15;
+    border: 1px solid #00ff15;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: #00b80f;
+    border-color: #00b80f;
+}

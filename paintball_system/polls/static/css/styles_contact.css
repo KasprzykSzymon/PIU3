@@ -1,0 +1,111 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; 
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-family: "Playfair Display", serif;
+    margin: 0 0 10px 0; 
+    font-weight: 100;
+    font-size: 4em;
+    color: #333;
+}
+
+.contact-container .subheader {
+    font-family: "Parisienne", serif;
+    margin: 0; 
+    padding: 0; 
+    font-weight: 500;
+    font-size: 3em;
+    color: #888888;
+}
+
+.contact-container .subheader-wrapper {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.contact-container .paintball-info {
+    height: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.paintball-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: center;   
+    height: 100%;              
+    text-align: center;         
+    margin-bottom: 50px;   
+    background-color: #b8b8b8; 
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.localization-text {
+    max-width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+}
+
+.localization-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #333;
+}
+
+.description-localization {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.localization-button {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 60px; 
+    background-color: transparent;
+    color: #888888; 
+    text-decoration: none;
+    border: 2px solid #888888;
+    text-align: center;
+}
+
+.localization-button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.localization-img-container {
+    flex: 1;
+    text-align: center;
+}
+
+.localization-img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+

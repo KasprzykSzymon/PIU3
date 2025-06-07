@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+    <title>Błąd Płatności</title>
+    <link rel="stylesheet" href="{% static 'css/styles_configuration.css' %}">
+{% endblock %}
+
+{% block content %}
+<br>
+    <div class="confirmation-container">
+        <h1>BŁĄD PŁATNOŚCI</h1>
+        <p class="subheader">Coś poszło nie tak</p>
+        <div class="reservation-details">
+            <p>Nie udało się zakończyć płatności. Może to być spowodowane problemami z Twoją metodą płatności lub błędem po stronie serwera.</p>
+            <p>Prosimy spróbować ponownie lub skontaktować się z naszym działem obsługi klienta.</p>
+        </div>
+        <a href="{% url 'home_page' %}" class="btn-return-profile">Strona główna</a>
+        <a href="{% url 'contact' %}" class="btn-return-profile" style="margin-top: 20px;">Skontaktuj się z nami</a>
+        
+    
+    </div>
+{% endblock %}

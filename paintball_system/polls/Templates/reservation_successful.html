@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/styles_reservation_successful.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Udana rezerwacja</title>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <div class="calendar-container">
+        <div id="reservation">
+            <h1>Udana rezerwacja</h1>
+            <h2>Udało Ci się zarezerwować pole</h2>
+        </div>
+        <br>
+        <h2>Szczegóły rezerwacji:</h2>
+        <p>Data przyjazdu: {{ arrival_date }}</p>
+        <p>Liczba dorosłych: {{ adults }}</p>
+        <p>Godzina rezerwacji: {{ reservation_time }}</p>
+        
+        
+    </div>
+
+    
+{% endblock %}

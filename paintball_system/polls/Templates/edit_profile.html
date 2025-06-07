@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/styles_edit_profile.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Edytuj profil</title>
+    {% endblock %}
+
+    {% block content %}
+
+    
+    <h1>Edytuj profil</h1>
+
+    <div class="edit-profile-container">
+        <form method="POST" class="form-container">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div>
+                <label for="{{ form.username.id_for_label }}">Username</label>
+                {{ form.username }}
+            </div>
+            <div>
+                <label for="{{ form.email.id_for_label }}">Email</label>
+                {{ form.email }}
+            </div>
+            <div>
+                <label for="{{ form.first_name.id_for_label }}">Imię</label>
+                {{ form.first_name }}
+            </div>
+            <div>
+                <label for="{{ form.last_name.id_for_label }}">Nazwisko</label>
+                {{ form.last_name }}
+            </div>
+            <div>
+                <label for="{{ form.phone_number.id_for_label }}">Numer telefonu</label>
+                {{ form.phone_number }}
+            </div>
+            <div class="button-wrapper">
+                <button type="submit" id="btn1">ZAPISZ</button>
+                <a href="{% url 'your_data' %}" id="btn2">Powrót</a>
+            </div>
+            
+        </form>
+
+{% endblock %}

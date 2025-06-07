@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+    <title>Błąd</title>
+    <link rel="stylesheet" href="{% static 'css/styles_configuration.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="confirmation-container">
+        <h1>Płatność zaakceptowana z błędem</h1>
+        <p class="subheader">Wielokrotna próba wysłania zamówienia</p>
+        <div class="reservation-details">
+            <p>Prosimy sprawdzić płatność ponownie lub skontaktować się z naszym działem obsługi klienta.</p>
+        </div>
+        <div>
+            <a href="{% url 'home_page' %}" class="btn-return-profile">Strona główna</a>
+            <a href="{% url 'contact' %}" class="btn-return-profile" style="margin-top: 20px;">Skontaktuj się z nami</a>
+        </div>
+    </div>
+{% endblock %}

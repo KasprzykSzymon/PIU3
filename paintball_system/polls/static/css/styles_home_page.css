@@ -1,0 +1,29 @@
+
+
+/* Styl dla kontenera tekstu nagłówka (przesunięcie tekstu nagłówka) */
+.header-text {
+    position: relative;
+    top: -70px; 
+}
+
+/* Styl dla tekstu nagłówka */
+.header-text h1 {
+    color: white; 
+    font-family: 'Playfair Display', serif;
+    font-size: 5em; 
+    font-weight: 100; 
+    margin: 0;
+}
+
+/* Styl dla podtytułu */
+.header-text p {
+    color: #ffffff;  
+    font-family: 'Parisienne', serif;
+    font-size: 3em;
+    margin-top: 10px;  
+}
+
+.description{
+    padding-left: 10%;
+    text-align: left;      
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles_profile.css' %}">
+    <title>Profil</title>
+{% endblock %}
+
+{% block content %}
+    <div class="profile-container">
+        <h1>Profil użytkownika:</h1>
+
+        <div class="btn-group">
+            <a href="{% url 'your_data' %}" class="btn">Twoje dane</a>
+            <a href="{% url 'your_reservations' %}" class="btn">Twoje rezerwacje</a>
+            <a href="{% url 'history_reservations' %}" class="btn">Historia rezerwacji</a>
+        </div>
+    </div>
+{% endblock %}

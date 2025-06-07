@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/styles_home_page.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Speed Paintball</title>
+    {% endblock %}
+
+{% block content %}
+    <div class="header" style="background-image: url('{% static '/images/HomePage.jpeg' %}'); background-size: cover; background-position: center; padding-top: 10%; height: 70vh; display: flex; justify-content: center; align-items: center; text-align: center;">
+        <div class="header-text">
+            <h1>Speed Paintball</h1>
+            <p>W rozproszonych kulkach</p>
+        </div>
+    </div>
+    <div class="description">
+        <h1>Adrenalina, strategia i świetna zabawa zapraszamy na nasze pole paintballowe!</h1> 
+        <p>Szukasz miejsca, które dostarczy Ci niezapomnianych emocji, dobrej dawki ruchu i wyzwań? Nasze pole paintballowe to idealne miejsce dla Ciebie!</p>
+        <h3>Czym wyróżnia się nasze pole?</h3>
+        <p>🌲 Zróżnicowany teren Oferujemy malownicze pola pełne przeszkód, schronień i naturalnych zakamarków. Las, barykady, wieże i okopy zapewnią Ci mnóstwo możliwości do realizacji strategicznych planów.</p>
+        <p>🎯 Scenariusze gry Niezależnie od tego, czy chcesz zdobyć flagę przeciwnika, przetrwać oblężenie, czy zrealizować tajną misję mamy przygotowane różnorodne scenariusze, które sprawią, że każda gra będzie inna.</p>
+        <p>💪 Dla każdego Bez względu na to, czy jesteś nowicjuszem, czy zaprawionym w boju graczem, zadbamy o to, abyś czuł się komfortowo i miał frajdę. Nasza ekipa oferuje profesjonalne szkolenie i wsparcie techniczne.</p>
+        <p>🔫 Nowoczesny sprzęt Korzystamy z wysokiej jakości markerów paintballowych, ochronnych masek i strojów, aby Twoja gra była nie tylko ekscytująca, ale i bezpieczna.</p>
+        <p>🏆 Idealne na każdą okazję Urodziny, wieczory kawalerskie, integracje firmowe czy po prostu spontaniczne spotkanie ze znajomymi paintball to zawsze dobry pomysł!</p>
+        
+    </div>
+
+    
+{% endblock %}

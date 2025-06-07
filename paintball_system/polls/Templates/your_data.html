@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles_your_data.css' %}">
+    <title>Profil</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="data-container">
+        <h1>Profil użytkownika</h1>
+        <div class="data-content">
+            <p><strong>Nick:</strong> {{ user.username }}</p>
+            <p><strong>Imię:</strong> {{ user.first_name }}</p>
+            <p><strong>Nazwisko:</strong> {{ user.last_name }}</p>
+            <p><strong>E-mail:</strong> {{ user.email }}</p>
+            <p><strong>Numer telefonu:</strong> {{ user.phone_number }}</p>
+        </div>
+        <div class="button-wrapper">
+            <a href="{% url 'edit_profile' %}" class="btn">Zmień dane</a>
+            <a href="{% url 'profile' %}" class="btn2">Powrót</a>
+        </div>   
+
+    </div>
+</body>
+{% endblock %}

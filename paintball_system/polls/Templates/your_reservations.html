@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles_your_reservation.css' %}">
+    <title>Profil</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        document.querySelectorAll('.modal').forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+    </script>
+
+    {% for reservation in future_reservations %}
+        <div class="reservation-card">
+            <div class="reservation-info">
+                <p><strong>Data:</strong> {{ reservation.reservation_date }} {{ reservation.reservation_time }}</p>
+                <p><strong>Liczba osób:</strong> {{ reservation.num_people }}</p>
+                <p><strong>Status płatności:</strong> {{ reservation.payment_status }}</p>
+            </div>
+            <button class="details-btn" onclick="openModal('modal-{{ reservation.id }}')">Szczegóły</button>
+        </div>
+
+        
+        <div id="modal-{{ reservation.id }}" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-{{ reservation.id }}')">&times;</span>
+                <h3>Szczegóły rezerwacji</h3>
+                <p><strong>Data:</strong> {{ reservation.reservation_date }}</p>
+                <p><strong>Godzina:</strong> {{ reservation.reservation_time }}</p>
+                <p><strong>Liczba osób:</strong> {{ reservation.num_people }}</p>
+                <p><strong>Status płatności:</strong> {{ reservation.payment_status }}</p>
+                {% if is_admin %}
+                    <p><strong>Użytkownik:</strong> {{ reservation.user.username }}</p>
+                    <p><strong>Imie:</strong> {{ reservation.user.first_name }}</p>
+                    <p><strong>Nazwisko:</strong> {{ user.last_name }}</p>
+                    <p><strong>Numer telefonu:</strong> {{ user.phone_number }}</p>
+                {% endif %}
+            </div>
+        </div>
+    {%empty%}
+        <h1>Nie posiadasz nadchodzących rezerwacji</h1>
+    {% endfor %}
+    
+</body>
+
+{% endblock %}

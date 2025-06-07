@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/styles_contact.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+    {% endblock %}
+
+{% block content %}
+
+<div class="contact-container">
+    <h1>Kontakt</h1>
+    <div class="subheader-wrapper">
+        <p class="subheader">Jesteśmy tu dla Ciebie!</p>
+    </div>
+</div>
+
+<div>
+    <div class="paintball-info">
+        <h2>Hard Paintball</h2>
+        <p>Kielce ul. Boczna 16</p>
+        <p>25-001 Kielce, Świętokrzyskie, Polska</p>
+        <p>Nr konta: 11 1111 0000 0000 1111 1111 0000</p>
+        <p>Bank Spółdzielczy I Kielce</p>
+        <p>Email: <a href="mailto:hardpaintball@kielce.pl">hardpaintball@kielce.pl</a></p>
+        <p>Telefon: <a href="tel:+48412345678">+48 412 345 678</a></p>
+    </div>
+
+    <div class="localization-text">
+        <h2>Nasza lokalizacja</h2>
+        <p class="description-localization">
+            Przyjdź i poczuj prawdziwą adrenalinę w wyjątkowym miejscu, <br>
+            gdzie liczy się spryt, współpraca i dobra zabawa.  <br>
+            Rezerwuj swój termin już dziś i sprawdź, czy jesteś gotowy, by stanąć do walki!
+        </p>
+        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=50%C2%B051'19.5%22N+20%C2%B036'41.1%22E+(Bocza)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">best drones</a></iframe></div>
+    </div>
+</div>
+
+
+
+{% endblock %}

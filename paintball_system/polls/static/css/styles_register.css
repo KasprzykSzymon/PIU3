@@ -1,0 +1,128 @@
+.register-container {
+    text-align: center;
+    margin: 60px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('/static/images/register_background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.register-container .subheader {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 5px rgba(210, 180, 140, 0.5);
+    outline: none;
+}
+
+.checkbox-container {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.checkbox-container label {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #ffffff; 
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn-register {
+    padding: 15px 30px;
+    background-color: #0056b3;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(210, 180, 140, 0.3);
+}
+
+.btn-register:hover {
+    background-color: #ffffff;
+    color:#0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(210, 180, 140, 0.4);
+}
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+}
+
+.message.error {
+    border-color: red;
+    color: red;
+}
+
+.message.success {
+    border-color: green;
+    color: green;
+}

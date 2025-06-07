@@ -1,0 +1,93 @@
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-profile-container{
+    text-align: center;
+}
+
+.form-container {
+    margin: 60px auto;
+    padding: 40px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('/static/images/register_background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px; 
+}
+
+.form-container label {
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px; 
+}
+
+.form-container input {
+    width:80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+#btn1, #btn2 {
+    display: block;
+    width: 20%; 
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn1 {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+}
+
+#btn1:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#btn2 {
+    background-color: #00ff15;
+    border: 1px solid #00ff15;
+    color: white;
+}
+
+#btn2:hover {
+    background-color: #00b80f;
+    border-color: #00b80f;
+}
+

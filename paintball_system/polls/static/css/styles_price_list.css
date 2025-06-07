@@ -1,0 +1,38 @@
+body {
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+
+.price_list-container {
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('/static/images/register_background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 700px;
+    padding-bottom: 60px;
+}
+
+.price_list-container h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.price_list-container .subheader {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+#Cennik{
+    
+    margin: auto;
+    
+}
